@@ -3288,3 +3288,28 @@ section.address-section {
     text-align: left;
     font-size: 1.5em;
 }
+
+div.gm-style-iw div {
+    line-height: 1.5em;
+    text-align: left;
+    margin-top: 0.2em;
+}
+
+div.gm-style-iw strong {
+    line-height: 2em;
+}
+
+a.icon.circle.fa-linkedin {
+    background: url(images/lin);
+    border-radius: 8px;
+    color: white;
+}
+
+a.icon.circle.fa-linkedin-square {
+    /* font-size: 1em; */
+    background: url(images/linkedin/In-2C-34px-TM.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a.icon.circle.fa-linkedin-square:before {color: black;text-indent: -80px;overflow: hidden;top: 0;display: inline-block;width: 48px;vertical-align: middle;}
