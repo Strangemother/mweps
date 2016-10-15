@@ -1566,7 +1566,7 @@
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		color: #444;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -2465,7 +2465,7 @@
 /* Main */
 
 	#main {
-		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		/* background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg"); */
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -2489,7 +2489,7 @@
 			}
 
 	body.index #main {
-		padding-top: 7em;
+		padding-top: 5em;
 	}
 
 /* CTA */
@@ -2512,7 +2512,7 @@
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 5em 5em 6em 5em;
 		text-align: center;
 	}
 
@@ -3284,7 +3284,7 @@ section.address-section {
     width: 100%;
 }
 
-.address-section header {
+#contact .special .row header {
     text-align: left;
     font-size: 1.5em;
 }
@@ -3313,3 +3313,70 @@ a.icon.circle.fa-linkedin-square {
 }
 
 a.icon.circle.fa-linkedin-square:before {color: black;text-indent: -80px;overflow: hidden;top: 0;display: inline-block;width: 48px;vertical-align: middle;}
+
+table.smd {
+    text-align: left;
+}
+
+table.smd .type-col {
+    width: 35%;
+}
+
+table.smd thead {
+    display: none;
+}
+
+tr.person-row {
+    font-weight: 500;
+}
+
+table caption {
+    display: none;
+}
+
+section header h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#contact h3 {
+    font-size: 1.5em;
+    text-align: left;
+    color: #555;
+}
+
+div#mc_embed_signup_scroll {}
+
+div#mc_embed_signup {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mc-field-group label {
+    display: none;
+}
+
+.inline {
+    display: flex;
+}
+
+.inline .mc-field-group {
+    width: 66%;
+    margin-right: 7%;
+}
+
+input#mc-embedded-subscribe {
+    min-width: 0;
+    padding: 0 3em;
+    border: none;
+    background: #2f7535;
+}
+
+input#mce-EMAIL {
+    height: 100%;
+}
+
+#mc_embed_signup_scroll p {
+    margin-top: 3em;
+    color: #000;
+}
