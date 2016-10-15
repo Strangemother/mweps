@@ -1659,12 +1659,13 @@
 		padding-top: 7em;
 		position: relative;
 		text-align: center;
+		font-size: 1.4em;
 	}
 
 		header.special:before, header.special:after {
-			border-bottom: solid 1.5px;
-			border-top: solid 1.5px;
-			content: '';
+			/* border-bottom: solid 1.5px; */
+			/* border-top: solid 1.5px; */
+			/* content: ''; */
 			height: 7px;
 			opacity: 0.1;
 			position: absolute;
@@ -1673,7 +1674,7 @@
 		}
 
 		header.special:before {
-			left: 0;
+			/* left: 0; */
 		}
 
 		header.special:after {
@@ -1682,6 +1683,8 @@
 
 		header.special h2 {
 			margin-bottom: 0;
+			font-weight: 400;
+			color: #353535;
 		}
 
 		header.special h2 + p {
@@ -1691,17 +1694,17 @@
 
 		header.special .icon {
 			cursor: default;
-			height: 7em;
+			height: 5em;
 			left: 0;
 			position: absolute;
 			text-align: center;
-			top: 1em;
+			top: 0em;
 			width: 100%;
 		}
 
 			header.special .icon:before {
 				font-size: 3.5em;
-				opacity: 0.35;
+				/* opacity: 0.35; */
 			}
 
 	footer > :last-child {
@@ -1740,7 +1743,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #83d3c9;
+			border-color: #ffffff;
 		}
 
 	input[type="text"],
@@ -2065,8 +2068,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #11a56f;
+			border-color: transparent;
 			color: #fff !important;
 		}
 
@@ -2074,8 +2077,8 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #2cb973 !important;
+				border-color: transparent !important;
 			}
 
 		input[type="button"].fit,
@@ -2106,12 +2109,12 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			/* background-color: #83d3c9; */
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
-			color: #fff;
+			/* color: #fff; */
 		}
 
 			.wrapper.style2 .button:hover {
@@ -2199,6 +2202,7 @@
 		#header h1 {
 			font-weight: 900;
 			margin: 0;
+			/* color: black; */
 		}
 
 			#header h1 span {
@@ -2485,7 +2489,7 @@
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		padding-top: 7em;
 	}
 
 /* CTA */
@@ -2493,10 +2497,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url(images/trias.png);
 		color: #fff;
 		padding: 5em;
 		text-align: center;
@@ -2550,7 +2551,7 @@
 		/* Section/Article */
 
 			header.special {
-				padding-top: 5.5em;
+				padding-top: 6.5em;
 				margin-bottom: 4em;
 			}
 
@@ -3205,4 +3206,85 @@ p.large {
 
 h1#logo.icon-before:before {
     box-shadow: 0 0 0.7px red;
+}
+
+h2 strong {
+    font-weight: 600;
+}
+
+#header.reveal h1 {
+    color: black;
+}
+
+#header.reveal.alt h1 {
+    color: white;
+}
+
+span.signup-label {
+    display: inline-block;
+    width: 100%;
+    background: rgba(41, 41, 41, 0.58);
+    opacity: .2;
+}
+
+span.signup-label {
+    opacity: 0;
+}
+
+.signup a.button.special {
+    width: 10em;
+    min-width: 0;
+    padding: 0em 2em;
+    line-height: 3.5rem;
+}
+
+.signup input#email {
+    width: 15em;
+    line-height: 1em;
+    padding: 1em;
+}
+
+.signup a.button.special:focus {
+    outline: solid 2px white;
+}
+
+.signup input#email:focus {
+    outline: solid 2px;
+}
+
+div#gmap_canvas {
+    height: 300px;
+    margin-bottom: 2em;
+    width: 66%;
+}
+
+p.address {
+    font-size: 1.2em;
+    text-align: left;
+    width: 33%;
+}
+
+p.address .line {
+    display: block;
+    line-height: 1.2em;
+}
+
+p.address .line.company {
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.address-block {
+    display: flex;
+}
+
+section {}
+
+section.address-section {
+    width: 100%;
+}
+
+.address-section header {
+    text-align: left;
+    font-size: 1.5em;
 }
