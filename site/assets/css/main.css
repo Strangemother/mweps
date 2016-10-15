@@ -1684,7 +1684,7 @@
 		header.special h2 {
 			margin-bottom: 0;
 			font-weight: 400;
-			color: #353535;
+			color: #464646;
 		}
 
 		header.special h2 + p {
@@ -1901,7 +1901,7 @@
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
+			opacity: 0.7;
 			text-align: center;
 		}
 
@@ -2424,14 +2424,16 @@
 			opacity: 0;
 			padding: 3em;
 			text-align: center;
+			padding-bottom: 0;
 		}
 
 			#banner .inner header {
 				display: inline-block;
 				border-bottom: solid 2px;
 				border-top: solid 2px;
-				margin: 0 0 2em 0;
+				margin: 0 0 2.5em 0;
 				padding: 3px 0 3px 0;
+				font-size: 1.4em;
 			}
 
 				#banner .inner header h2 {
@@ -2448,7 +2450,7 @@
 
 			#banner .inner p {
 				letter-spacing: 0.1em;
-				margin: 0;
+				margin-bottom: 4rem;
 				text-transform: uppercase;
 			}
 
@@ -2695,6 +2697,16 @@
 			}
 
 	}
+
+
+	@media screen and (min-width: 750px) and (max-width: 980px) {
+		#banner .inner header h2 {
+			font-size: 2.8rem;
+		}
+
+	}
+
+
 
 /* Narrower */
 
@@ -3196,9 +3208,11 @@
 
 	}
 
-p.large {
-    font-size: 1.1em;
+#banner .inner p.large {
+    font-size: 1.5em;
     font-weight: 400;
+    line-height: 1.7em;
+    margin-bottom: 1em;
 }
 
 #banner .inner header h2:before, .icon-before:before {content: '';/* border: solid 1px; */width: 1em;display: inline-block;height: 1em;position: relative;top: 0.15em;margin-right: 0.4em;border-radius: 50px;background: #e00914;box-shadow: 0px 0px 2px #e00914;}
@@ -3266,7 +3280,7 @@ p.address {
 
 p.address .line {
     display: block;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 p.address .line.company {
@@ -3337,6 +3351,8 @@ table caption {
 section header h3 {
     font-size: 1.5em;
     font-weight: 500;
+    vertical-align: top;
+    /* outline: solid; */
 }
 
 #contact h3 {
@@ -3379,4 +3395,62 @@ input#mce-EMAIL {
 #mc_embed_signup_scroll p {
     margin-top: 3em;
     color: #000;
+}
+
+section.wrapper.style1.container.special {
+    background: white;
+    padding: 0 2em;
+}
+
+span.company-name {
+    color: #000000;
+}
+
+#main header p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    text-shadow: 0 0 0.2px #777;
+}
+
+span.icon.featured {
+    background-image: url(images/png/tag.png);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 6em;
+    /* margin: 1.5em 2em; */
+    /* outline: solid; */
+}
+
+span.icon.featured.hire {
+    background-image: url(../svg/rent-2.svg);
+    font-size: 1.2em;
+    margin-bottom: 1.3em;
+}
+
+span.icon.service {
+    background-image: url(images/png/wrench.png);
+}
+
+.row .4u section p {
+    vertical-align: top;
+    margin: 2em 1em;
+}
+
+#banner .inner .icon svg {
+    height: 300px;
+    /* outline: solid; */
+    top: -40px;
+    position: relative;
+}
+
+#banner .inner .icon {
+    height: 170px;
+    overflow: hidden;
+    color: white;
+}
+
+span.icon.featured.sales {
+    background-position: 50% 58%;
 }
