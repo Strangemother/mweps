@@ -1655,8 +1655,8 @@
 	}
 
 	header.special {
-		margin-bottom: 5em;
-		padding-top: 7em;
+		margin-bottom: 3em;
+		/* padding-top: 7em; */
 		position: relative;
 		text-align: center;
 		font-size: 1.4em;
@@ -1700,6 +1700,7 @@
 			text-align: center;
 			top: 0em;
 			width: 100%;
+			display: none;
 		}
 
 			header.special .icon:before {
@@ -2295,6 +2296,7 @@
 			color: #fff;
 			padding: 2em 2.5em;
 			position: absolute;
+			visibility: hidden;
 		}
 
 			#header.alt nav {
@@ -2401,16 +2403,16 @@
 	}
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url(images/trias.png);
+		/* background-attachment: scroll, scroll, scroll, fixed; */
+		background-color: #ffffff;
+		/* background-image: url(images/trias.png); */
 		/* background-position: bottom left, bottom right, top left, top center; */
 		/* background-repeat: no-repeat, no-repeat, repeat, no-repeat; */
 		/* background-size: 25em, 25em, auto, cover; */
-		color: #fff;
+		color: #000;
 		cursor: default;
-		padding: 6em 0;
-		text-align: center;
+		padding: 2em;
+		/* text-align: center; */
 	}
 
 		#banner .inner {
@@ -2423,10 +2425,10 @@
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 			/* background: rgba(52, 27, 43, 0.5); */
-			color: #fff;
+			color: #000;
 			display: inline-block;
 			opacity: 0;
-			padding: 3em;
+			padding: 0em 0em;
 			text-align: center;
 			padding-bottom: 0;
 		}
@@ -2435,27 +2437,30 @@
 				display: inline-block;
 				/* border-bottom: solid 2px; */
 				/* border-top: solid 2px; */
-				margin: 0 0 2.5em 0;
-				padding: 3px 0 3px 0;
+				/* margin: 0 0 2.5em 0; */
+				/* padding: 3px 0 3px 0; */
 				font-size: 1.4em;
+				margin-top: 1em;
 			}
 
 				#banner .inner header h2 {
 					/* border-bottom: solid 2px; */
 					/* border-top: solid 2px; */
-					font-size: 2.5em;
+					font-size: 2em;
 					font-weight: 900;
 					letter-spacing: 0.2em;
 					margin: 0;
-					padding-left: 0.05em;
-					position: relative;
-					text-transform: uppercase;
+					/* padding-left: 0.05em; */
+					/* position: relative; */
+					font-family: Arial, Helvetica, "Sans-serif";
+					text-align: left;
+					line-height: 1.2em;
 				}
 
 			#banner .inner p {
-				letter-spacing: 0.1em;
+				/* letter-spacing: 0.1em; */
 				margin-bottom: 4rem;
-				text-transform: uppercase;
+				text-transform: capitalize;
 			}
 
 				#banner .inner p a {
@@ -2496,6 +2501,8 @@
 
 	body.index #main {
 		padding-top: 5em;
+		/* top: -5em; */
+		position: relative;
 	}
 
 /* CTA */
@@ -3213,13 +3220,15 @@
 	}
 
 #banner .inner p.large {
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 1.46em;
+    font-weight: normal;
     line-height: 1.7em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
+    font-family: "Arial";
+    border-top: solid 5px #ff0101;
 }
 
-#banner .inner header h2:before, .icon-before:before {content: '';/* border: solid 1px; */width: 1em;display: inline-block;height: 1em;position: relative;top: 0.15em;margin-right: 0.4em;border-radius: 50px;background: #e00914;box-shadow: 0px 0px 2px #e00914;}
+.icon-before:before {content: '';/* border: solid 1px; */width: 1em;display: inline-block;height: 1em;position: relative;top: 0.15em;margin-right: 0.4em;border-radius: 50px;background: #e00914;box-shadow: 0px 0px 2px #e00914;}
 
 
 h1#logo.icon-before:before {
@@ -3481,4 +3490,58 @@ span.icon img {
     vertical-align: bottom;
     border-radius: 0;
     background-size: contain;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand .logo {
+    margin-right: 2rem;
+}
+
+.brand p {
+    letter-spacing: .1em;
+}
+
+#banner .contact span {
+    display: block;
+}
+
+#banner .contact {
+    width: 20%;
+    float: right;
+}
+
+#banner .contact span.name {
+    font-weight: 400;
+}
+
+#banner .contact h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+#banner .contact span.position {
+    margin-bottom: 1rem;
+}
+
+#banner .contact span b {
+    color: #ff0101;
+    min-width: 1.3em;
+    display: inline-block;
+}
+
+#banner p.capture {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 3em 0 0 0em;
+}
+
+#nav .tel {
+    font-weight: 400;
+    font-size: 1.2em;
+    vertical-align: bottom;
+    margin: 0 1em 0 0;
 }
