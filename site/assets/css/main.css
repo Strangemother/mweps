@@ -1705,6 +1705,10 @@
 			header.special .icon:before {
 				font-size: 3.5em;
 				/* opacity: 0.35; */
+				background: url(images/logo.jpg);
+				background-size: contain;
+				border-radius: 0;
+				box-shadow: none;
 			}
 
 	footer > :last-child {
@@ -1901,7 +1905,7 @@
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.7;
+			/* opacity: 0.7; */
 			text-align: center;
 		}
 
@@ -2429,8 +2433,8 @@
 
 			#banner .inner header {
 				display: inline-block;
-				border-bottom: solid 2px;
-				border-top: solid 2px;
+				/* border-bottom: solid 2px; */
+				/* border-top: solid 2px; */
 				margin: 0 0 2.5em 0;
 				padding: 3px 0 3px 0;
 				font-size: 1.4em;
@@ -3220,6 +3224,11 @@
 
 h1#logo.icon-before:before {
     box-shadow: 0 0 0.7px red;
+    background: url(images/logo.jpg);
+    background-size: contain;
+    box-shadow: none;
+    border-radius: 0;
+    background-repeat: no-repeat;
 }
 
 h2 strong {
@@ -3413,7 +3422,7 @@ span.company-name {
 }
 
 span.icon.featured {
-    background-image: url(images/png/tag.png);
+    /* background-image: url(images/png/tag.png); */
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
@@ -3421,6 +3430,7 @@ span.icon.featured {
     background-size: 6em;
     /* margin: 1.5em 2em; */
     /* outline: solid; */
+    overflow: hidden;
 }
 
 span.icon.featured.hire {
@@ -3453,4 +3463,22 @@ span.icon.service {
 
 span.icon.featured.sales {
     background-position: 50% 58%;
+}
+
+
+.sales img {
+    width: 100%;
+}
+
+span.icon img {
+    width: 100%;
+}
+
+#banner .inner header h2:before {
+    background-image: url(images/logo.jpg);
+    width: 2em;
+    height: 2em;
+    vertical-align: bottom;
+    border-radius: 0;
+    background-size: contain;
 }
