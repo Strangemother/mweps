@@ -2205,13 +2205,13 @@
 	}
 
 		#header h1 {
-			font-weight: 900;
+			font-weight: 700;
 			margin: 0;
 			/* color: black; */
 		}
 
 			#header h1 span {
-				font-weight: 300;
+				/* font-weight: 300; */
 			}
 
 		#header nav {
@@ -3246,6 +3246,8 @@ h2 strong {
 
 #header.reveal h1 {
     color: black;
+    font-family: "Arial";
+    letter-spacing: .1em;
 }
 
 #header.reveal.alt h1 {
@@ -3432,7 +3434,7 @@ span.company-name {
 
 span.icon.featured {
     /* background-image: url(images/png/tag.png); */
-    height: 200px;
+    height: 9em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -3443,13 +3445,13 @@ span.icon.featured {
 }
 
 span.icon.featured.hire {
-    background-image: url(../svg/rent-2.svg);
-    font-size: 1.2em;
-    margin-bottom: 1.3em;
+    background-image: url(../../images/client/hire.jpg);
+    /* font-size: 1.2em; */
+    /* margin-bottom: 1.3em; */
 }
 
-span.icon.service {
-    background-image: url(images/png/wrench.png);
+span.icon.featured.service {
+    background-image: url(../../images/client/service.jpg);
 }
 
 .row .4u section p {
@@ -3470,8 +3472,12 @@ span.icon.service {
     color: white;
 }
 
-span.icon.featured.sales {
+span.icon.featured {
     background-position: 50% 58%;
+    background: url(../../images/client/sales.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -3481,6 +3487,7 @@ span.icon.featured.sales {
 
 span.icon img {
     width: 100%;
+    display: none;
 }
 
 #banner .inner header h2:before {
@@ -3511,6 +3518,8 @@ span.icon img {
 #banner .contact {
     width: 20%;
     float: right;
+    min-width: 350px;
+    margin: 0 0 0 3em;
 }
 
 #banner .contact span.name {
@@ -3545,3 +3554,14 @@ span.icon img {
     vertical-align: bottom;
     margin: 0 1em 0 0;
 }
+
+span.icon.featured.lease {
+    background: url(../../images/client/lease.jpg);
+    background-size: contain;
+}
+
+	@media screen and (max-width: 1280px) {
+		.brand {
+			font-size: .95em;
+		}
+	}
